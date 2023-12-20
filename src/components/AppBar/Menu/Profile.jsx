@@ -35,7 +35,7 @@ function Profile() {
           aria-expanded={open ? 'true' : undefined}
         >
           <Avatar
-            sx={{ width: 30, height: 30 }}
+            sx={{ width: 34, height: 34 }}
             alt='Ngoc Phu'
             src='https://e1.pxfuel.com/desktop-wallpaper/574/448/desktop-wallpaper-gojo-satoru-on-dog-gojo-cute-thumbnail.jpg'
           />
