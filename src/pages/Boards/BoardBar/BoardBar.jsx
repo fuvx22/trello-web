@@ -37,7 +37,6 @@ function BoardBar() {
       justifyContent: 'space-between',
       gap: 2,
       overflowX: 'auto',
-      borderBottom: '1px solid #fff',
       px: 2
     }}>
       <Box sx={{display:'flex', alignItems:'center', gap:2}}>
