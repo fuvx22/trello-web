@@ -96,25 +96,25 @@ function BoardBar({ board }) {
           }}
         >
           <Tooltip title='ngoc phu vo'>
-            <Avatar alt="Ngoc Phu" src="/static/images/avatar/1.jpg" />
+            <Avatar alt="Ngoc Phu" src="" />
           </Tooltip>
           <Tooltip title='ngoc phu vo'>
-            <Avatar alt="Agoc Phu" src="/static/images/avatar/2.jpg" />
+            <Avatar alt="Agoc Phu" src="" />
           </Tooltip>
           <Tooltip title='ngoc phu vo'>
-            <Avatar alt="Rgoc Phu" src="/static/images/avatar/3.jpg" />
+            <Avatar alt="Rgoc Phu" src="" />
           </Tooltip>
           <Tooltip title='ngoc phu vo'>
-            <Avatar alt="Hgoc Phu" src="/static/images/avatar/4.jpg" />
+            <Avatar alt="Hgoc Phu" src="" />
           </Tooltip>
           <Tooltip title='ngoc phu vo'>
-            <Avatar alt="Ygoc Phu" src="/static/images/avatar/5.jpg" />
+            <Avatar alt="Ygoc Phu" src="" />
           </Tooltip>
           <Tooltip title='ngoc phu vo'>
-            <Avatar alt="Ogoc Phu" src="/static/images/avatar/6.jpg" />
+            <Avatar alt="Ogoc Phu" src="" />
           </Tooltip>
           <Tooltip title='ngoc phu vo'>
-            <Avatar alt="Qgoc Phu" src="/static/images/avatar/7.jpg" />
+            <Avatar alt="Qgoc Phu" src="" />
           </Tooltip>
         </AvatarGroup>
       </Box>
