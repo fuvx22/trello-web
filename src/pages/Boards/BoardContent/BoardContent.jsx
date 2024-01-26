@@ -6,8 +6,8 @@ import {
   // PointerSensor,
   useSensor,
   useSensors,
-  MouseSensor,
-  TouchSensor,
+  // MouseSensor,
+  // TouchSensor,
   DragOverlay,
   defaultDropAnimationSideEffects,
   closestCorners,
@@ -16,6 +16,8 @@ import {
   // rectIntersection,
   getFirstCollision
 } from '@dnd-kit/core'
+
+import { MouseSensor, TouchSensor } from '~/customLibraries/DndKitSensors'
 import { useEffect, useState, useCallback, useRef } from 'react'
 import { arrayMove } from '@dnd-kit/sortable'
 import { cloneDeep, isEmpty } from 'lodash'
