@@ -9,19 +9,25 @@ import CloseIcon from '@mui/icons-material/Close'
 import {SortableContext, horizontalListSortingStrategy} from '@dnd-kit/sortable'
 
 
-function ListColumns({ columns }) {
+function ListColumns({ columns, createNewColumn, createNewCard }) {
   const [openNewColumnForm, setOpenNewColumnForm] = useState(false)
   const toggleOpenNewColumnForm = () => setOpenNewColumnForm(!openNewColumnForm)
 
   const [newColumnTitle, setNewColumnTitle] = useState('')
 
-  const addNewColumn = () => {
+  const addNewColumn = async () => {
     if (!newColumnTitle) {
       toast.error('Please input column title!')
       return
     }
-    // console.log(newColumnTitle)
-    // Call API here
+
+    // Tạo dữ liệu để gọi API
+    const newColumnData = {
+      title: newColumnTitle
+    }
+
+    // Gọi lên prop func createNewColumn trên board
+    await createNewColumn(newColumnData)
 
     toggleOpenNewColumnForm(false)
     setNewColumnTitle('')
@@ -39,7 +45,7 @@ function ListColumns({ columns }) {
         overflowY: 'hidden',
         '&::-webkit-scrollbar-track': {m:2}
       }}>
-        {columns?.map(column => <Column key={column._id} column={column}/>) }
+        {columns?.map(column => <Column key={column._id} column={column} createNewCard={createNewCard}/>) }
 
         {/* Box Add new column */}
         {!openNewColumnForm
