@@ -27,7 +27,7 @@ function ListColumns({ columns, createNewColumn, createNewCard }) {
     }
 
     // Gọi lên prop func createNewColumn trên board
-    await createNewColumn(newColumnData)
+    createNewColumn(newColumnData)
 
     toggleOpenNewColumnForm(false)
     setNewColumnTitle('')

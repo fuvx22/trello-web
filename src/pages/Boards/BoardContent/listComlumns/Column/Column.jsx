@@ -19,7 +19,7 @@ import DragHandleIcon from '@mui/icons-material/DragHandle'
 import theme from '~/theme'
 import ListCards from './ListCards/ListCards'
 import TextField from '@mui/material/TextField'
-import { mapOrder } from '~/utils/sorts'
+// import { mapOrder } from '~/utils/sorts'
 import CloseIcon from '@mui/icons-material/Close'
 
 import {useSortable} from '@dnd-kit/sortable'
@@ -52,7 +52,8 @@ function Column({ column, createNewCard }) {
     setAnchorEl(null)
   }
 
-  const orderedCards = mapOrder(column?.cards, column?.cardOrderIds, '_id')
+  // cards đã được sort ở component cao nhất
+  const orderedCards = column.cards
 
   const [openNewCardForm, setOpenNewCardForm] = useState(false)
   const toggleOpenNewCardForm = () => setOpenNewCardForm(!openNewCardForm)
@@ -73,7 +74,7 @@ function Column({ column, createNewCard }) {
     }
 
     // Gọi lên prop func createNewCard trên board
-    await createNewCard(newCardData)
+    createNewCard(newCardData)
 
     toggleOpenNewCardForm(false)
     setNewCardTitle('')
