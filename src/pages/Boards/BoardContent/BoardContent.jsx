@@ -1,5 +1,5 @@
 import Box from '@mui/material/Box'
-import ListColumns from './ListComlumns/ListColumns'
+import ListColumns from '~/pages/Boards/BoardContent/listComlumns/ListColumns'
 // import { mapOrder } from '~/utils/sorts'
 import {
   DndContext,
